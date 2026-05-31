@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 30rem;
+    background-color: rgb(222, 91, 91);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    position: fixed;
+    top: 0.5rem;
+    
+}
+
+#categories-table {
+    margin-top: 3rem;
+}
+
+#categories-table td {
+    padding: 0.25rem;
+}
+
+button.selected {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+button.combined {
+    font-weight: bold;
+}
+
+.word-count {
+    color: red;
+}
