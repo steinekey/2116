@@ -177,7 +177,6 @@ function onButtonClick(button) {
     if (wordToCategory[word1] === wordToCategory[word2]) {
         handleCorrectMatch(otherButton, button);
     } else {
-        alert(`Incorrect match! "${word1}" is in "${wordToCategory[word1]}" and "${word2}" is in "${wordToCategory[word2]}"`);
         handleIncorrectMatch(otherButton, button);
     }
     saveGameState();
