@@ -153,8 +153,6 @@ function handleIncorrectMatch(firstButton, secondButton) {
 function getButtonWords(button) {
     const cell = button.closest("td");
     const row = cell.closest("tr");
-    console.log("cell index:", cell.cellIndex, "row index:", row.rowIndex);
-    console.log("board value:", board[row.rowIndex][cell.cellIndex]);
 
     return board[row.rowIndex][cell.cellIndex];
 }
@@ -253,7 +251,6 @@ function saveGameState() {
         secondsElapsed
     };
     localStorage.setItem('connectionsGameState', JSON.stringify(gameState));
-    console.log(board);
 }
 
 function updateScore() {
